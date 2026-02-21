@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Fkirine — Research Profile</title>
+  <meta name="description" content="Mohamed Fkirine — Postdoctoral Researcher (Systems Theory Research Group), Tampere University. Operator theory, infinite-dimensional control, stochastic PDEs." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Mohamed Fkirine — Research Profile" />
+  <meta property="og:description" content="Postdoctoral Researcher at Tampere University. Operator theory, infinite-dimensional control, stochastic PDEs." />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Mohamed Fkirine",
+    "jobTitle":"Postdoctoral Researcher",
+    "affiliation":"Tampere University",
+    "email":"mailto:mohamed.fkirine@tuni.fi",
+    "url":"https://mohamedfkirine.com",
+    "sameAs":[
+      "https://scholar.google.com/citations?hl=en&user=QEJGAnoAAAAJ",
+      "https://github.com/fkirinemohamed"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#aab3c5;
+      --line:#253046;
+      --accent:#7dd3fc;
+      --accent2:#a7f3d0;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --radius: 18px;
+      --max: 980px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#ffffff;
+        --card:#f6f7fb;
+        --text:#0b1220;
+        --muted:#4b5563;
+        --line:#e5e7eb;
+        --shadow: 0 10px 30px rgba(0,0,0,.08);
+      }
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 0%, rgba(125,211,252,.15), transparent 55%),
+        radial-gradient(900px 500px at 90% 10%, rgba(167,243,208,.12), transparent 60%),
+        var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration-color: rgba(125,211,252,.55); text-underline-offset: 3px;}
+    a:hover{color:var(--accent)}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 64px;}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      border-bottom:1px solid color-mix(in srgb, var(--line) 70%, transparent);
+    }
+    .topbar{
+      max-width:var(--max); margin:0 auto; padding:14px 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+    }
+    .brand{font-weight:750; letter-spacing:.2px; display:flex; align-items:center; gap:10px; white-space:nowrap;}
+    .dot{
+      width:10px; height:10px; border-radius:999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 4px rgba(125,211,252,.12);
+    }
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; font-size:14px;}
+    nav a{
+      padding:6px 10px; border-radius:999px;
+      border:1px solid transparent;
+      color:var(--muted);
+      text-decoration:none;
+    }
+    nav a:hover{
+      color:var(--text);
+      border-color: color-mix(in srgb, var(--line) 70%, transparent);
+      background: color-mix(in srgb, var(--card) 65%, transparent);
+    }
+    @media (max-width: 860px){ nav{display:none} }
+
+    .grid{display:grid; gap:18px; grid-template-columns: 1.15fr .85fr; align-items:start;}
+    @media (max-width: 860px){ .grid{grid-template-columns:1fr} }
+
+    .card{
+      background: color-mix(in srgb, var(--card) 92%, transparent);
+      border: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .h1{font-size: clamp(28px, 3.2vw, 42px); line-height:1.15; margin:0 0 10px;}
+    .subtitle{margin:0; color:var(--muted); font-size: 16px;}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+    .tag{
+      font-size:12px; color:var(--muted);
+      border:1px solid color-mix(in srgb, var(--line) 75%, transparent);
+      background: color-mix(in srgb, var(--bg) 65%, transparent);
+      padding:6px 10px; border-radius:999px;
+    }
+    .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      border-radius:12px;
+      padding:10px 12px;
+      border:1px solid color-mix(in srgb, var(--line) 75%, transparent);
+      background: color-mix(in srgb, var(--card) 75%, transparent);
+      text-decoration:none;
+      font-weight:650;
+      font-size:14px;
+    }
+    .btn.primary{
+      border-color: transparent;
+      background: linear-gradient(135deg, rgba(125,211,252,.95), rgba(167,243,208,.95));
+      color:#0b1220;
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .btn:active{transform: translateY(0px)}
+    .small{font-size:13px; color:var(--muted); margin-top:12px;}
+
+    section{padding:18px 0}
+    h2{font-size:18px; margin:0 0 12px; letter-spacing:.2px;}
+    .two{display:grid; gap:18px; grid-template-columns: 1fr 1fr;}
+    @media (max-width: 860px){ .two{grid-template-columns:1fr} }
+
+    .list{display:flex; flex-direction:column; gap:12px;}
+    .item{
+      padding:14px;
+      border-radius:14px;
+      border:1px solid color-mix(in srgb, var(--line) 75%, transparent);
+      background: color-mix(in srgb, var(--bg) 55%, transparent);
+    }
+    .item b{display:block; margin-bottom:4px;}
+    .meta{color:var(--muted); font-size:13px;}
+    .pub{display:flex; gap:10px; align-items:flex-start;}
+    .badge{
+      font-size:12px; font-weight:800;
+      padding:6px 10px; border-radius:999px;
+      background: color-mix(in srgb, var(--accent) 18%, transparent);
+      border:1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+      color:var(--text); white-space:nowrap;
+    }
+    footer{
+      margin-top:30px;
+      padding-top:18px;
+      border-top:1px solid color-mix(in srgb, var(--line) 75%, transparent);
+      color:var(--muted);
+      font-size:13px;
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand"><span class="dot"></span><span>Mohamed Fkirine</span></div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid" style="padding-top:18px;">
+      <div class="card">
+        <h1 class="h1">Mohamed Fkirine</h1>
+        <p class="subtitle">
+          Postdoctoral Researcher · Systems Theory Research Group<br />
+          Mathematics Research Centre, Tampere University · Finland
+        </p>
+
+        <div class="tags" aria-label="Research keywords">
+          <span class="tag">Operator theory</span>
+          <span class="tag">One-parameter semigroups</span>
+          <span class="tag">Infinite-dimensional control</span>
+          <span class="tag">Stochastic PDEs</span>
+        </div>
+
+        <div class="btnrow">
+          <a class="btn primary" href="cv.pdf">Download CV (PDF)</a>
+          <a class="btn" href="https://scholar.google.com/citations?hl=en&user=QEJGAnoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn" href="https://github.com/fkirinemohamed" target="_blank" rel="noopener">GitHub</a>
+          <!-- Optional: add your ORCID later -->
+          <!-- <a class="btn" href="https://orcid.org/XXXX-XXXX-XXXX-XXXX" target="_blank" rel="noopener">ORCID</a> -->
+        </div>
+
+        <p class="small">
+          I work on applied mathematics at the intersection of operator theory, control of infinite-dimensional systems,
+          and stochastic analysis in infinite dimensions, with a focus on well-posedness, stability, and controllability of
+          stochastic and deterministic PDEs.
+        </p>
+
+        <p class="small">
+          Email: <a href="mailto:mohamed.fkirine@tuni.fi">mohamed.fkirine@tuni.fi</a>
+          <span style="opacity:.55">·</span>
+          <a href="mailto:fkirinemohamed@gmail.com">fkirinemohamed@gmail.com</a>
+        </p>
+      </div>
+
+      <aside class="card">
+        <h2>Highlights</h2>
+        <div class="list">
+          <div class="item">
+            <b>Postdoctoral Researcher</b>
+            <div class="meta">Tampere University (2024–present)</div>
+          </div>
+          <div class="item">
+            <b>Recent preprint (2025)</b>
+            <div class="meta"><a href="https://arxiv.org/abs/2503.22432" target="_blank" rel="noopener">Polynomial stability of wind turbine tower models</a></div>
+          </div>
+          <div class="item">
+            <b>Selected open-access articles</b>
+            <div class="meta">See publications below (DOI links).</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section id="about" class="two">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I am a postdoctoral researcher in the Systems Theory Research Group at the Mathematics Research Centre,
+          Tampere University. My work combines analytic and probabilistic methods to study stochastic and deterministic PDEs,
+          including questions of well-posedness, stability, and controllability.
+        </p>
+        <p class="meta">
+          PhD in Applied Mathematics (Ibn Zohr University, 2023).
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Research Interests</h2>
+        <div class="list">
+          <div class="item"><b>Functional analysis & operator theory</b><div class="meta">One-parameter semigroup theory; perturbations; admissibility.</div></div>
+          <div class="item"><b>Control of infinite-dimensional systems</b><div class="meta">Stability and controllability for PDE models.</div></div>
+          <div class="item"><b>Stochastic analysis in infinite dimensions</b><div class="meta">SPDEs, boundary noise, regularity and long-time behavior.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="card">
+        <h2>Research</h2>
+        <div class="two">
+          <div class="item">
+            <b>Stochastic PDEs with boundary noise</b>
+            <div class="meta">Well-posedness and regularity for evolution equations driven by boundary perturbations.</div>
+          </div>
+          <div class="item">
+            <b>Semigroup methods & perturbation theory</b>
+            <div class="meta">Admissibility, generator perturbations, and applications to PDE models.</div>
+          </div>
+          <div class="item">
+            <b>Stability of infinite-dimensional systems</b>
+            <div class="meta">Polynomial stability and related robustness questions (e.g., structural models).</div>
+          </div>
+          <div class="item">
+            <b>Control under constraints</b>
+            <div class="meta">Controllability questions with positivity constraints in structured population models.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="card">
+        <h2>Selected Publications</h2>
+        <div class="list">
+          <div class="item pub">
+            <span class="badge">2026</span>
+            <div>
+              <b>On the strong Feller property of the heat equation on quantum graphs with Kirchhoff noise</b>
+              <div class="meta">M. Fkirine, M. Kovács, E. Sikolya · Semigroup Forum</div>
+              <div class="meta"><a href="https://doi.org/10.1007/s00233-025-10599-y" target="_blank" rel="noopener">DOI</a></div>
+            </div>
+          </div>
+
+          <div class="item pub">
+            <span class="badge">2025</span>
+            <div>
+              <b>Impact of mixed boundary conditions on stochastic equations with noise at the boundary</b>
+              <div class="meta">M. Fkirine, S. Hadd, A. Rhandi · NoDEA</div>
+              <div class="meta"><a href="https://doi.org/10.1007/s00030-025-01032-y" target="_blank" rel="noopener">DOI</a></div>
+            </div>
+          </div>
+
+          <div class="item pub">
+            <span class="badge">2024</span>
+            <div>
+              <b>On evolution equations with white-noise boundary conditions</b>
+              <div class="meta">M. Fkirine, S. Hadd, A. Rhandi · Journal of Mathematical Analysis and Applications</div>
+              <div class="meta"><a href="https://doi.org/10.1016/j.jmaa.2024.128087" target="_blank" rel="noopener">DOI</a> · <a href="https://arxiv.org/abs/2305.11496" target="_blank" rel="noopener">arXiv</a></div>
+            </div>
+          </div>
+
+          <div class="item pub">
+            <span class="badge">2024</span>
+            <div>
+              <b>Controllability under positivity constraints of a size-structured population model with delayed birth process</b>
+              <div class="meta">Y. El Gantouh, M. Fkirine, Y. Simpore · Mathematical Methods in the Applied Sciences</div>
+              <div class="meta"><a href="https://doi.org/10.1002/mma.9833" target="_blank" rel="noopener">DOI</a></div>
+            </div>
+          </div>
+
+          <div class="item pub">
+            <span class="badge">2024</span>
+            <div>
+              <b>Solving stochastic equations with unbounded nonlinear perturbations</b>
+              <div class="meta">M. Fkirine, S. Hadd · Stochastics</div>
+              <div class="meta"><a href="https://doi.org/10.1080/17442508.2023.2258248" target="_blank" rel="noopener">DOI</a></div>
+            </div>
+          </div>
+
+          <div class="item pub">
+            <span class="badge">2022</span>
+            <div>
+              <b>On nonlinear Miyadera-Voigt perturbations</b>
+              <div class="meta">M. Fkirine, S. Hadd · Archiv der Mathematik</div>
+              <div class="meta"><a href="https://doi.org/10.1007/s00013-022-01754-w" target="_blank" rel="noopener">DOI</a></div>
+            </div>
+          </div>
+
+          <div class="item pub">
+            <span class="badge">2022</span>
+            <div>
+              <b>The well-posedness of a parabolic non-autonomous semilinear equation</b>
+              <div class="meta">M. Fkirine, S. Hadd · IFAC-PapersOnLine</div>
+              <div class="meta"><a href="https://doi.org/10.1016/j.ifacol.2022.07.311" target="_blank" rel="noopener">DOI</a></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="small">
+          Full list: <a href="https://scholar.google.com/citations?hl=en&user=QEJGAnoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="card" id="talks">
+        <h2>Recent Talks</h2>
+        <div class="list">
+          <div class="item">
+            <b>Polynomial stability of wind turbine tower models</b>
+            <div class="meta">IWOTA 2025, Twente (Jul 2025)</div>
+          </div>
+          <div class="item">
+            <b>On evolution equations with white-noise boundary conditions</b>
+            <div class="meta">Stochastic Sauna, Helsinki (Dec 2024)</div>
+          </div>
+          <div class="item">
+            <b>Stochastic admissibility and generator perturbations for stochastic Cauchy problems</b>
+            <div class="meta">IWOTA 2024, Canterbury (Aug 2024)</div>
+          </div>
+          <div class="item">
+            <b>Generator perturbations for stochastic Cauchy problems</b>
+            <div class="meta">Agent-Forum, Jyväskylä (May 2024)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="teaching">
+        <h2>Teaching & Mentoring</h2>
+        <div class="list">
+          <div class="item">
+            <b>Teaching Assistant — Discrete Mathematics</b>
+            <div class="meta">Tampere University (2024–2025)</div>
+          </div>
+          <div class="item">
+            <b>Supervision</b>
+            <div class="meta">Tuulia Tokola (doctoral student, 2025–present)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2>Contact</h2>
+        <div class="two">
+          <div class="item">
+            <b>Email</b>
+            <div class="meta">
+              <a href="mailto:mohamed.fkirine@tuni.fi">mohamed.fkirine@tuni.fi</a><br/>
+              <a href="mailto:fkirinemohamed@gmail.com">fkirinemohamed@gmail.com</a>
+            </div>
+          </div>
+          <div class="item">
+            <b>Links</b>
+            <div class="meta">
+              <a href="https://scholar.google.com/citations?hl=en&user=QEJGAnoAAAAJ" target="_blank" rel="noopener">Google Scholar</a> ·
+              <a href="https://github.com/fkirinemohamed" target="_blank" rel="noopener">GitHub</a>
+              <!-- Add ORCID/LinkedIn later -->
+            </div>
+          </div>
+        </div>
+        <p class="small">Last updated: <span id="updated"></span></p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Mohamed Fkirine</div>
+      <div class="meta">Hosted on GitHub Pages · Custom domain enabled</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const d = new Date();
+    document.getElementById("updated").textContent =
+      d.toLocaleString(undefined, { year:"numeric", month:"long" });
+  </script>
+</body>
+</html>
